@@ -1,0 +1,276 @@
+/* Dashboard Specific Styles - Adapté pour SaaSdeck */
+
+/* Stat Cards */
+.stat-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s;
+    height: 100%;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 15px;
+    background-color: var(--primary-color);
+}
+
+.stat-title {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.stat-change {
+    font-size: 0.8rem;
+    margin: 5px 0 0;
+    color: var(--gray);
+}
+
+.stat-change.positive {
+    color: #28a745;
+}
+
+.stat-change.negative {
+    color: #dc3545;
+}
+
+/* Activity List */
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activity-list li {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.activity-list li:last-child {
+    border-bottom: none;
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    margin-right: 15px;
+    flex-shrink: 0;
+    background-color: var(--primary-color);
+}
+
+.activity-content {
+    flex-grow: 1;
+}
+
+.activity-content p {
+    margin: 0;
+    color: var(--dark-color);
+}
+
+.activity-content small {
+    display: block;
+    margin-top: 5px;
+    color: var(--gray);
+}
+
+/* Quick Actions */
+.quick-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 0.3s;
+    padding: 15px 10px;
+    border-radius: 8px;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+}
+
+.action-btn:hover {
+    background-color: var(--light-gray);
+    color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.action-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 10px;
+    background-color: var(--primary-color);
+}
+
+.action-btn span {
+    font-size: 0.9rem;
+}
+
+/* Today's Schedule */
+.today-schedule {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.schedule-item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-time {
+    width: 80px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.schedule-details {
+    flex-grow: 1;
+}
+
+.schedule-details h5 {
+    font-size: 1rem;
+    margin: 0 0 5px;
+    color: var(--dark-color);
+}
+
+.schedule-details p {
+    font-size: 0.8rem;
+    color: var(--gray);
+    margin: 0;
+}
+
+/* System Status */
+.system-status {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.status-item:last-child {
+    border-bottom: none;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+}
+
+.status-indicator.good {
+    background-color: #28a745;
+}
+
+.status-indicator.warning {
+    background-color: #ffc107;
+}
+
+.status-indicator.critical {
+    background-color: #dc3545;
+}
+
+.status-item span:first-of-type {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
+.status-value {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Chart Container */
+.card-body canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .activity-list li {
+        flex-direction: column;
+    }
+    
+    .activity-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .schedule-item {
+        flex-direction: column;
+    }
+    
+    .schedule-time {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+}
