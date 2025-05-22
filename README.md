@@ -21,6 +21,51 @@ Bienvenue dans ce projet PHP développé sans framework, reposant sur une archit
  Initialisation automatique des tooltips pour l'accessibilité  
  Design extensible avec Bootstrap 
 
+
+    Fonctionnalités Principales
+*Tableau de Bord Administratif
+Affichage des statistiques clés (nombre d'étudiants, professeurs, absences du jour)
+
+Visualisation des données via des graphiques (statistiques hebdomadaires des absences)
+
+Accès rapide aux actions principales
+
+*Gestion des Utilisateurs
+Gestion des Étudiants:
+
+Ajout/suppression d'étudiants
+
+Attribution à des classes
+
+Génération automatique d'emails et mots de passe
+
+Gestion des Professeurs:
+
+Création/suppression de comptes
+
+Assignation aux modules
+
+Interface avec onglets pour une navigation intuitive
+
+*Gestion des Classes
+Création et gestion des classes (nom, salle)
+
+Ajout de modules aux classes
+
+Assignation des professeurs aux modules avec volume horaire
+
+Affichage du nombre d'étudiants par classe
+
+* Gestion des Absences
+Système de suivi complet des absences:
+
+Filtrage 
+
+Visualisation 
+
+Affichage des détails 
+
+Interface responsive avec tableau des absences
 ---
 
 Structure du projet
@@ -48,4 +93,18 @@ gestion_absences22222/
 │   ├── js/                                
 │   └── index.php               
 ├── scripts/                   
-└── README.md     
+└── README.md  
+
+*Technologies utilisées
+_PHP (POO, MVC)
+
+_MySQL
+
+_HTML / CSS / JS
+
+_Apache (via XAMPP)
+
+ *Auteur
+Projet développé dans le cadre d'un mini-projet universitaire.
+
+Étudiante en ingénierie TDIA (Transformation Digitale & Intelligence Artificielle).
