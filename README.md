@@ -21,8 +21,7 @@ Bienvenue dans ce projet PHP développé sans framework, reposant sur une archit
  Initialisation automatique des tooltips pour l'accessibilité  
  Design extensible avec Bootstrap 
 
-
-    Fonctionnalités Principales
+---------------------------------------------------------------------------------------------
 *Tableau de Bord Administratif
 Affichage des statistiques clés (nombre d'étudiants, professeurs, absences du jour)
 
@@ -64,7 +63,7 @@ Visualisation
 Affichage des détails 
 
 Interface responsive avec tableau des absences
----
+--------------------------------------------------------------------------------------------
 
 Structure du projet
 
@@ -102,7 +101,4 @@ _HTML / CSS / JS
 
 _Apache (via XAMPP)
 
- *Auteur
-Projet développé dans le cadre d'un mini-projet universitaire.
 
-Étudiante en ingénierie TDIA (Transformation Digitale & Intelligence Artificielle).
