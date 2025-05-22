@@ -26,8 +26,6 @@ Bienvenue dans ce projet PHP développé sans framework, reposant sur une archit
 *Tableau de Bord Administratif
 Affichage des statistiques clés (nombre d'étudiants, professeurs, absences du jour)
 
-Visualisation des données via des graphiques (statistiques hebdomadaires des absences)
-
 Accès rapide aux actions principales
 
 *Gestion des Utilisateurs
